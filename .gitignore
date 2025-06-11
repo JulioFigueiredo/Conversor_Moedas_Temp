@@ -1,0 +1,35 @@
+# Ambientes virtuais
+venv/
+env/
+.venv/
+
+# Bytecode e cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Arquivos temporários
+*.log
+*.tmp
+*.swp
+
+# Diretórios de build/distribuição
+build/
+dist/
+*.egg-info/
+*.egg
+*.bak
+*.old
+*.orig
+*.DS_Store
+
+# Pastas de distribuição customizadas
+.dist/
+
+# IDEs e editores
+.vscode/
+.idea/
+
+# Configurações do sistema/macOS
+.DS_Store
+Thumbs.db
