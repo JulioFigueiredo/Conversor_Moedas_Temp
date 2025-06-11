@@ -1,7 +1,8 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField
+from wtforms import SelectField,FloatField, SubmitField
 from wtforms.validators import DataRequired
 
-class Temperatura(FlaskForm):
-    temperatura = StringField("tempratura", validators=DataRequired())
-    botao_confirmacao = SubmitField("Converter")
+class Temperature(FlaskForm):
+    value = FloatField("value", validators=[DataRequired()])
+    type = SelectField("Conversion Type", choices=[('c_to_f', 'Celsius->Fahrenheit'),('f_to_c', 'Fahrenheit->Celsius')])
+    submit = SubmitField("Convert")
